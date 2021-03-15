@@ -32,7 +32,7 @@ class Solution {
             }else{
                 //左侧remainder为[x,toL] 右侧reminder为[toR,y]
                 if(intervals[i][0] < toBeRemoved[0]){
-                    resList.add(Arrays.asList(intervals[i][0],toBeRemoved[0])); //new ArrayList(){{intervals[i][0],toBeRemoved[0];}}
+                    resList.add(Arrays.asList(intervals[i][0],toBeRemoved[0])); //new ArrayList(){{add(intervals[i][0]);add(toBeRemoved[0]);}}
                 }
                 if(intervals[i][1] > toBeRemoved[1]){
                     resList.add(Arrays.asList(toBeRemoved[1],intervals[i][1]));
